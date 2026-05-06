@@ -1,6 +1,8 @@
 
 
 const AllFriends = () => {
+
+
     return (
         <div>
             
