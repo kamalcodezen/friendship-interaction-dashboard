@@ -11,7 +11,7 @@ const useHooks = () => {
       setTimeout(() => {
         setAllFriends(data);
         setLoading(false);
-      }, 1000);
+      }, );
     };
     friendsDataFetch();
   }, []);

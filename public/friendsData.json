@@ -6,7 +6,7 @@
     "email": "alex.johnson@gmail.com",
     "days_since_contact": 21,
     "status": "overdue",
-    "tags": ["college", "best friend"],
+    "tags": ["best friend"],
     "bio": "Met during university orientation in 2021. We still enjoy weekend road trips and gaming nights together.",
     "goal": 14,
     "next_due_date": "2026-05-08"
@@ -18,7 +18,7 @@
     "email": "sophia.martinez@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["work", "designer"],
+    "tags": ["work"],
     "bio": "Former UI design teammate who loves photography, coffee shops, and creative brainstorming sessions.",
     "goal": 10,
     "next_due_date": "2026-05-18"
@@ -30,7 +30,7 @@
     "email": "michael.chen@gmail.com",
     "days_since_contact": 11,
     "status": "almost due",
-    "tags": ["travel", "gym buddy"],
+    "tags": ["travel"],
     "bio": "Travel partner for multiple mountain trips. Always planning the next adventure and fitness challenge.",
     "goal": 12,
     "next_due_date": "2026-05-13"
@@ -42,7 +42,7 @@
     "email": "emma.williams@gmail.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": ["school", "close friend"],
+    "tags": ["close friend"],
     "bio": "Known each other since high school. We usually catch up through long voice calls every month.",
     "goal": 14,
     "next_due_date": "2026-05-06"
@@ -54,7 +54,7 @@
     "email": "daniel.carter@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["startup", "mentor"],
+    "tags": ["mentor"],
     "bio": "A startup enthusiast who motivates me to learn modern technologies and improve my coding skills.",
     "goal": 10,
     "next_due_date": "2026-05-20"
@@ -66,7 +66,7 @@
     "email": "olivia.brown@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["music", "creative"],
+    "tags": ["music"],
     "bio": "Met at a music festival. We exchange playlists and discuss indie albums almost every week.",
     "goal": 14,
     "next_due_date": "2026-05-12"
@@ -78,7 +78,7 @@
     "email": "noah.anderson@gmail.com",
     "days_since_contact": 30,
     "status": "overdue",
-    "tags": ["football", "neighbor"],
+    "tags": ["football"],
     "bio": "Childhood neighbor and football teammate. Haven’t properly caught up since he moved to another city.",
     "goal": 15,
     "next_due_date": "2026-05-05"
@@ -90,7 +90,7 @@
     "email": "isabella.garcia@gmail.com",
     "days_since_contact": 7,
     "status": "on-track",
-    "tags": ["book club", "writer"],
+    "tags": ["writer"],
     "bio": "Book club friend who enjoys mystery novels and writing short stories during weekend meetups.",
     "goal": 10,
     "next_due_date": "2026-05-17"
@@ -102,7 +102,7 @@
     "email": "liam.walker@gmail.com",
     "days_since_contact": 16,
     "status": "almost due",
-    "tags": ["gaming", "online friend"],
+    "tags": ["online friend"],
     "bio": "Met through an online gaming community and became close friends after years of teamwork and tournaments.",
     "goal": 14,
     "next_due_date": "2026-05-10"
@@ -114,7 +114,7 @@
     "email": "ava.thompson@gmail.com",
     "days_since_contact": 2,
     "status": "on-track",
-    "tags": ["photography", "travel"],
+    "tags": ["photography"],
     "bio": "A passionate travel photographer who shares amazing stories and hidden travel destinations.",
     "goal": 7,
     "next_due_date": "2026-05-22"
@@ -126,7 +126,7 @@
     "email": "ethan.brooks@gmail.com",
     "days_since_contact": 19,
     "status": "overdue",
-    "tags": ["developer", "hackathon"],
+    "tags": ["developer"],
     "bio": "Hackathon teammate who loves building side projects and discussing startup ideas late at night.",
     "goal": 14,
     "next_due_date": "2026-05-07"
@@ -138,7 +138,7 @@
     "email": "mia.rodriguez@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["art", "creative friend"],
+    "tags": ["creative friend"],
     "bio": "An artist friend who enjoys sketching, digital illustration, and visiting local art exhibitions together.",
     "goal": 12,
     "next_due_date": "2026-05-15"
