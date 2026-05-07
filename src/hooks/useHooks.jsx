@@ -1,20 +1,17 @@
 import { useEffect, useState } from "react";
-
+import friendsData from "../data/friendsData.json";
 const useHooks = () => {
   const [allFriends, setAllFriends] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/friendsData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTimeout(() => {
-          setAllFriends(data);
-          setLoading(false);
-        }, 1000);
-      });
+    setTimeout(() => {
+      setAllFriends(friendsData);
+      setLoading(false);
+    }, 1000);
   }, []);
 
+  // console.log(allFriends)
   return { allFriends, loading };
 };
 

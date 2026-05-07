@@ -4,6 +4,7 @@ import Homepage from "../pages/homepage/Homepage";
 import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
 import TimeLine from "../components/timeline/TimeLine";
 import Stats from "../components/stats/Stats";
+import FriendsDetails from "../pages/friendsDetails/FriendsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/stats",
         element: <Stats />,
+      },
+      {
+        path: "/friendsDetails/:id",
+        element: <FriendsDetails />,
       },
     ],
     errorElement: <NotFoundPage />,
