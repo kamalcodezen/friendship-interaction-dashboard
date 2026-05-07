@@ -6,7 +6,7 @@
     "email": "alex.johnson@gmail.com",
     "days_since_contact": 21,
     "status": "overdue",
-    "tags": ["best friend"],
+    "tags": ["friend"],
     "bio": "Met during university orientation in 2021. We still enjoy weekend road trips and gaming nights together.",
     "goal": 14,
     "next_due_date": "2026-05-08"
@@ -42,7 +42,7 @@
     "email": "emma.williams@gmail.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": ["close friend"],
+    "tags": ["friend"],
     "bio": "Known each other since high school. We usually catch up through long voice calls every month.",
     "goal": 14,
     "next_due_date": "2026-05-06"
@@ -102,7 +102,7 @@
     "email": "liam.walker@gmail.com",
     "days_since_contact": 16,
     "status": "almost due",
-    "tags": ["online friend"],
+    "tags": ["friend"],
     "bio": "Met through an online gaming community and became close friends after years of teamwork and tournaments.",
     "goal": 14,
     "next_due_date": "2026-05-10"
@@ -138,7 +138,7 @@
     "email": "mia.rodriguez@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["creative friend"],
+    "tags": ["friend"],
     "bio": "An artist friend who enjoys sketching, digital illustration, and visiting local art exhibitions together.",
     "goal": 12,
     "next_due_date": "2026-05-15"

@@ -5,18 +5,17 @@ const useHooks = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const friendsDataFetch = async () => {
-      const res = await fetch("/friendsData.json");
-      const data = await res.json();
-      setTimeout(() => {
-        setAllFriends(data);
-        setLoading(false);
-      }, );
-    };
-    friendsDataFetch();
+    fetch("/friendsData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setTimeout(() => {
+          setAllFriends(data);
+          setLoading(false);
+        }, 1000);
+      });
   }, []);
 
-  return { allFriends,loading };
+  return { allFriends, loading };
 };
 
 export default useHooks;

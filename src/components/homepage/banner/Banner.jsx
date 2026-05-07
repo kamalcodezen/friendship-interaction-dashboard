@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 const Banner = () => {
   return (
     <div className="container bg-slate-100">
-      <div className="flex flex-col items-center justify-center space-y-10 min-h-screen">
+      <div className="flex flex-col items-center justify-center space-y-10 min-h-screen border-b border-gray-300">
         {/* banner content */}
         <div className="flex flex-col items-center justify-center space-y-3 max-w-[50%]">
           <h2 className="md:text-4xl text-2xl font-bold text-center text-gray-700">
