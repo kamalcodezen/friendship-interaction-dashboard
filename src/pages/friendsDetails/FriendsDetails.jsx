@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import useHooks from "../../hooks/useHooks";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
 import { MdArchive } from "react-icons/md";
@@ -9,13 +9,13 @@ import { BsChatLeftText } from "react-icons/bs";
 import { IoVideocamOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { InstallPropsContext } from "../../context/InstallPropsContext";
+import { BiArrowBack } from "react-icons/bi";
 
 const FriendsDetails = () => {
   const friends = useParams();
   const { allFriends } = useHooks();
-
   const { handleCalls } = useContext(InstallPropsContext);
-
+  const navigate = useNavigate();
   // if (loading) {
   //   return <Loader/>
   // }
@@ -30,7 +30,11 @@ const FriendsDetails = () => {
     myFriends;
 
   return (
-    <div className="w-10/12 mx-auto py-9">
+    <div className="w-10/12 mx-auto py-2">
+      <button onClick={() => navigate(-1)} className="btn bg-slate-100">
+        <BiArrowBack /> Back
+      </button>
+
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         {/* left */}
         <div className="md:col-span-4 flex flex-col gap-3">

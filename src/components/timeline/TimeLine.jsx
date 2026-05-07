@@ -13,14 +13,12 @@ const TimeLine = () => {
   const { loading } = useHooks();
   const navigate = useNavigate();
 
-
-  
-//   timeline button a click korle loading hobe tarpor data dekhabe
+  //   timeline button a click korle loading hobe tarpor data dekhabe
   if (loading) {
     return <Loader />;
   }
 
-//   back button ata ager page a niye jabe
+  //   back button ata ager page a niye jabe
   if (callsData.length === 0) {
     return (
       <div className="w-10/12 mx-auto py-10">
@@ -30,13 +28,19 @@ const TimeLine = () => {
 
         <h2 className="text-3xl font-bold mb-5">Timeline</h2>
 
-        <p className="text-gray-500 font-semibold text-center">
-          No interactions yet.
-        </p>
+        <div className="flex flex-col items-center justify-center  rounded-lg shadow py-16 mt-10">
+          <h2 className="text-2xl font-bold text-gray-700 mb-2">
+            No Activity Yet
+          </h2>
+
+          <p className="text-gray-500 text-center max-w-md">
+            Your recent calls, texts, and video interactions will appear here
+            once you start connecting with your friends.
+          </p>
+        </div>
       </div>
     );
   }
-
 
   return (
     <div className="w-10/12 mx-auto py-5">
