@@ -9,11 +9,14 @@ import {
 } from "recharts";
 
 import { InstallPropsContext } from "../../context/InstallPropsContext";
+import useHooks from "../../hooks/useHooks";
+import Loader from "../loader/Loader";
 
 const COLORS = ["#22c55e", "#3b82f6", "#ef4444"];
 
 const Stats = () => {
   const { callsData } = useContext(InstallPropsContext);
+  const { loading } = useHooks();
 
   const callLength = callsData.filter((item) => item.type === "Call").length;
   const textLength = callsData.filter((item) => item.type === "Text").length;
@@ -33,6 +36,10 @@ const Stats = () => {
       value: videoLength,
     },
   ];
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="w-10/12 mx-auto py-7">

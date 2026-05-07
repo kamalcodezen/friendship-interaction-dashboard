@@ -1,9 +1,10 @@
-import { useState } from "react";
+import {  useState } from "react";
 import { InstallPropsContext } from "./InstallPropsContext";
 import toast from "react-hot-toast";
 
 const InstallPropsProvider = ({ children }) => {
   const [callsData, setCallsData] = useState([]);
+  // const [sortCall, setSortCall] = useState(callsData)
 
   const handleCalls = (friends, type) => {
     const newObj = {
