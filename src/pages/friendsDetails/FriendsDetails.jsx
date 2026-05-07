@@ -162,7 +162,7 @@ const FriendsDetails = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div
-                onClick={() => handleCalls(myFriends, "call")}
+                onClick={() => handleCalls(myFriends, "Call")}
                 className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
               >
                 <LuPhoneCall />
@@ -170,7 +170,7 @@ const FriendsDetails = () => {
               </div>
 
               <div
-                onClick={() => handleCalls(myFriends, "text")}
+                onClick={() => handleCalls(myFriends, "Text")}
                 className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
               >
                 <BsChatLeftText />
@@ -179,7 +179,7 @@ const FriendsDetails = () => {
               </div>
 
               <div
-                onClick={() => handleCalls(myFriends, "video")}
+                onClick={() => handleCalls(myFriends, "Video")}
                 className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
               >
                 <IoVideocamOutline />
