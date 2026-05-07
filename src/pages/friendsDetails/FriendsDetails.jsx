@@ -7,27 +7,27 @@ import Loader from "../../components/loader/Loader";
 import { LuPhoneCall } from "react-icons/lu";
 import { BsChatLeftText } from "react-icons/bs";
 import { IoVideocamOutline } from "react-icons/io5";
+import { useContext } from "react";
+import { InstallPropsContext } from "../../context/InstallPropsContext";
 
 const FriendsDetails = () => {
   const friends = useParams();
-  const { allFriends, loading } = useHooks();
+  const { allFriends } = useHooks();
 
-  if (loading) {
+  const { handleCalls } = useContext(InstallPropsContext);
+
+  // if (loading) {
+  //   return <Loader/>
+  // }
+
+  const myFriends = allFriends.find((fr) => fr.id === Number(friends.id));
+
+  if (!myFriends) {
     return <Loader />;
   }
 
-  const myFriends = allFriends.find((fr) => fr.id === Number(friends.id));
-  const {
-    name,
-    picture,
-    days_since_contact,
-    status,
-    tags,
-    bio,
-    email,
-    next_due_date,
-    goal,
-  } = myFriends;
+  const { name, picture, days_since_contact, status, tags, bio, email, goal } =
+    myFriends;
 
   return (
     <div className="w-10/12 mx-auto py-9">
@@ -72,7 +72,7 @@ const FriendsDetails = () => {
             </div>
 
             <p className="group relative text-gray-500 font-semibold italic cursor-pointer">
-              {bio.slice(0, 25)}...
+              {bio.slice(0, 22)}...
               <span className="absolute hidden group-hover:block bg-black text-white text-sm p-2 rounded-md w-64 z-10 left-0 top-8">
                 {bio}
               </span>
@@ -100,7 +100,7 @@ const FriendsDetails = () => {
         </div>
 
         {/* right */}
-        <div className="md:col-span-8 flex flex-col gap-4 rounded-lg">
+        <div className="md:col-span-8 flex flex-col gap-5 rounded-lg">
           {/* 1st card */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex flex-col items-center justify-center bg-white py-8 rounded-lg shadow">
@@ -125,7 +125,11 @@ const FriendsDetails = () => {
 
             <div className="flex flex-col items-center justify-center bg-white py-8 rounded-lg shadow">
               <span className="font-bold text-2xl text-black text-center">
-                {next_due_date}
+                {new Date().toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
               </span>
 
               <p className="font-semibold text-gray-400 text-center">
@@ -157,19 +161,27 @@ const FriendsDetails = () => {
             <p className="font-semibold text-gray-500 mb-4">Quick Check-In</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition">
+              <div
+                onClick={() => handleCalls(myFriends, "call")}
+                className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
+              >
                 <LuPhoneCall />
-
                 <p className="text-gray-500">Call</p>
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition">
+              <div
+                onClick={() => handleCalls(myFriends, "text")}
+                className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
+              >
                 <BsChatLeftText />
 
                 <p className="text-gray-500">Text</p>
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition">
+              <div
+                onClick={() => handleCalls(myFriends, "video")}
+                className="flex flex-col items-center justify-center gap-2 p-5 bg-slate-100 rounded-lg cursor-pointer hover:bg-slate-200 transition"
+              >
                 <IoVideocamOutline />
 
                 <p className="text-gray-500">Video</p>
