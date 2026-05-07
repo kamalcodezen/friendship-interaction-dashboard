@@ -4,7 +4,7 @@ const FriendsCard = ({ friends }) => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg text-center space-y-2">
-        <div className="w-23 h-23 rounded-full overflow-hidden">
+        <div className="w-20 h-20 rounded-full overflow-hidden">
           <img
             className="w-full h-full object-cover"
             src={picture}

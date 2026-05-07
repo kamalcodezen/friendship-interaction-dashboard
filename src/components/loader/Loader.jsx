@@ -37,7 +37,7 @@ const Loader = () => {
 
       {/* Tips / Dynamic message */}
       <p className="text-xs text-gray-400 italic text-center max-w-xs">
-        Fetching your favorite books... Please wait a moment
+         Please wait a moment...
       </p>
     </div>
   );

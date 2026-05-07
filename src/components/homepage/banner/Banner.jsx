@@ -1,6 +1,12 @@
 import { FaPlus } from "react-icons/fa";
+import useHooks from "../../../hooks/useHooks";
 
 const Banner = () => {
+  const { allFriends } = useHooks();
+  const onTrackFriends = allFriends.filter(
+    (friend) => friend.status == "on-track",
+  );
+
   return (
     <div className="container bg-slate-100">
       <div className="flex flex-col items-center justify-center space-y-10 min-h-screen border-b border-gray-300">
@@ -22,22 +28,34 @@ const Banner = () => {
         {/* banner stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg">
-            <span className="font-bold text-2xl  text-black text-center">10</span>
-            <p className="font-semibold text-gray-400 text-center">Total Friends</p>
+            <span className="font-bold text-2xl  text-black text-center">
+              {allFriends.length}
+            </span>
+            <p className="font-semibold text-gray-400 text-center">
+              Total Friends
+            </p>
           </div>
 
           <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg">
-            <span className="font-bold text-2xl  text-black text-center">3</span>
+            <span className="font-bold text-2xl  text-black text-center">
+             {onTrackFriends.length}
+            </span>
             <p className="font-semibold text-gray-400 text-center">On Track</p>
           </div>
 
           <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg">
-            <span className="font-bold text-2xl  text-black text-center">6</span>
-            <p className="font-semibold text-gray-400 text-center">Need Attention</p>
+            <span className="font-bold text-2xl  text-black text-center">
+              6
+            </span>
+            <p className="font-semibold text-gray-400 text-center">
+              Need Attention
+            </p>
           </div>
 
           <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg">
-            <span className="font-bold text-2xl  text-black text-center">12</span>
+            <span className="font-bold text-2xl  text-black text-center">
+              12
+            </span>
             <p className="font-semibold text-gray-400 text-center">
               Interactions This Month
             </p>
