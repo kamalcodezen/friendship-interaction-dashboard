@@ -30,7 +30,7 @@ const FriendsDetails = () => {
     myFriends;
 
   return (
-    <div className="w-10/12 mx-auto py-2">
+    <div className="w-11/12 lg:w-10/12 mx-auto py-4">
       <button onClick={() => navigate(-1)} className="btn bg-slate-100">
         <BiArrowBack /> Back
       </button>

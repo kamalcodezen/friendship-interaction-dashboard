@@ -81,6 +81,6 @@ src
 
 # 💻 GitHub Repository
 
-🔗 GitHub Repo: https://github.com/your-username/your-repo-name
+🔗 GitHub Repo: https://github.com/kamalcodezen/friendship-interaction-dashboard
 
 ---

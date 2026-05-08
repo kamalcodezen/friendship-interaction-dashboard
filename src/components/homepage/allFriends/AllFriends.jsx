@@ -12,7 +12,7 @@ const AllFriends = () => {
       ) : (
         <div>
           <h2 className="font-bold text-2xl py-4">Your Friends</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
             {allFriends.map((friends) => (
               <FriendsCard key={friends.id} friends={friends}></FriendsCard>
             ))}

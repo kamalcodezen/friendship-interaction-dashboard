@@ -26,7 +26,7 @@ const Banner = () => {
         </div>
 
         {/* banner stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           <div className="flex flex-col items-center justify-center bg-white px-14 py-8 rounded-lg">
             <span className="font-bold text-2xl  text-black text-center">
               {allFriends.length}

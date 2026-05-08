@@ -10,7 +10,7 @@ const useHooks = () => {
     setTimeout(() => {
       setAllFriends(friendsData);
       setLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   // console.log(allFriends)
