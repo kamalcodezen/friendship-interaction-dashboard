@@ -1,6 +1,6 @@
 import useHooks from "../../../hooks/useHooks";
 import Loader from "../../loader/Loader";
-import FriendsCard from "../../ui/friendsCard";
+import FriendsCard from "../../ui/FriendsCard";
 
 const AllFriends = () => {
   const { allFriends, loading } = useHooks();
